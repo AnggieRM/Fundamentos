@@ -11,7 +11,7 @@ namespace ElectroHouse
     {
         public static SqlConnection ObtenerConexion()
         {
-            SqlConnection conexion = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;User ID=User001;Initial Catalog=dbinfo;Data Source=PC001\\SQLEXPRESS");
+            SqlConnection conexion = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;User ID=User001;Initial Catalog=dbtest;Data Source=LAPTOP-31D55N99");
             conexion.Open();
             return conexion;
         }
