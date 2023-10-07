@@ -255,6 +255,7 @@
             Controls.Add(groupBox1);
             Name = "formProveedor";
             Text = "formProveedor";
+            Load += formProveedor_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
