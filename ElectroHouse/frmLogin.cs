@@ -30,6 +30,13 @@ namespace ElectroHouse
 
         private void button5_Click(object sender, EventArgs e)
         {
+
+            //Form1 obj = new Form1();
+            //obj.Show();
+            //this.Hide();
+
+            //obj.FormClosing += frm_closing;
+
             Login login = new Login();
             login.usuario = txtUsuario.Text;
             login.contrasenia = txtContraseña.Text;
@@ -43,6 +50,16 @@ namespace ElectroHouse
             {
                 MessageBox.Show("Exito al guardar");
             }
+        }
+
+        //private void frm_closing(object sender, FormClosingEventArgs e)
+        //{
+        //    this.Show();
+
+        //}
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

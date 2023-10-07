@@ -29,26 +29,39 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
+            loginToolStripMenuItem = new ToolStripMenuItem();
+            registrarseToolStripMenuItem = new ToolStripMenuItem();
             productosToolStripMenuItem = new ToolStripMenuItem();
             registrarProductosToolStripMenuItem = new ToolStripMenuItem();
             proveedoresToolStripMenuItem = new ToolStripMenuItem();
             registrarProveedoresToolStripMenuItem = new ToolStripMenuItem();
             reportesToolStripMenuItem = new ToolStripMenuItem();
             reportesToolStripMenuItem1 = new ToolStripMenuItem();
-            salirToolStripMenuItem = new ToolStripMenuItem();
-            loginToolStripMenuItem = new ToolStripMenuItem();
-            registrarseToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { loginToolStripMenuItem, productosToolStripMenuItem, proveedoresToolStripMenuItem, reportesToolStripMenuItem, salirToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { loginToolStripMenuItem, productosToolStripMenuItem, proveedoresToolStripMenuItem, reportesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(587, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
+            // 
+            // loginToolStripMenuItem
+            // 
+            loginToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registrarseToolStripMenuItem });
+            loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            loginToolStripMenuItem.Size = new Size(49, 20);
+            loginToolStripMenuItem.Text = "Login";
+            // 
+            // registrarseToolStripMenuItem
+            // 
+            registrarseToolStripMenuItem.Name = "registrarseToolStripMenuItem";
+            registrarseToolStripMenuItem.Size = new Size(180, 22);
+            registrarseToolStripMenuItem.Text = "Registrarse";
+            registrarseToolStripMenuItem.Click += registrarseToolStripMenuItem_Click;
             // 
             // productosToolStripMenuItem
             // 
@@ -92,27 +105,6 @@
             reportesToolStripMenuItem1.Text = "reportes";
             reportesToolStripMenuItem1.Click += reportesToolStripMenuItem1_Click;
             // 
-            // salirToolStripMenuItem
-            // 
-            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            salirToolStripMenuItem.Size = new Size(41, 20);
-            salirToolStripMenuItem.Text = "Salir";
-            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
-            // 
-            // loginToolStripMenuItem
-            // 
-            loginToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registrarseToolStripMenuItem });
-            loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            loginToolStripMenuItem.Size = new Size(49, 20);
-            loginToolStripMenuItem.Text = "Login";
-            // 
-            // registrarseToolStripMenuItem
-            // 
-            registrarseToolStripMenuItem.Name = "registrarseToolStripMenuItem";
-            registrarseToolStripMenuItem.Size = new Size(180, 22);
-            registrarseToolStripMenuItem.Text = "Registrarse";
-            registrarseToolStripMenuItem.Click += registrarseToolStripMenuItem_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -137,7 +129,6 @@
         private ToolStripMenuItem registrarProveedoresToolStripMenuItem;
         private ToolStripMenuItem reportesToolStripMenuItem;
         private ToolStripMenuItem reportesToolStripMenuItem1;
-        private ToolStripMenuItem salirToolStripMenuItem;
         private ToolStripMenuItem loginToolStripMenuItem;
         private ToolStripMenuItem registrarseToolStripMenuItem;
     }

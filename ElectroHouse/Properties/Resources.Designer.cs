@@ -63,6 +63,17 @@ namespace ElectroHouse.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kisspng_inventory_management_software_warehouse_management_warehouse_5ac5d4a20a7bb9_278567911522914466043 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-inventory-management-software-warehouse-management-warehouse-5ac5d4a20a7b" +
+                        "b9.278567911522914466043", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login {
             get {
                 object obj = ResourceManager.GetObject("login", resourceCulture);
